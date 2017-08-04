@@ -41,7 +41,8 @@
     "unexpected": "^10.17.0",
     "unexpected-dom": "^3.1.0",
     "unexpected-react": "^3.2.4",
-    "unexpected-sinon": "^10.4.0"
+    "unexpected-sinon": "^10.4.0",
+    "cross-env": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^0.14 || ^15.0.0-rc || ^15.0",
@@ -54,7 +55,7 @@
     "react-input-autosize": "global:AutosizeInput"
   },
   "scripts": {
-    "build": "gulp clean && NODE_ENV=production gulp build",
+    "build": "gulp clean && cross-env NODE_ENV=production gulp build",
     "bump": "gulp bump",
     "bump:major": "gulp bump:major",
     "bump:minor": "gulp bump:minor",
